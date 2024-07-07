@@ -1,4 +1,4 @@
-import config from './';
+import config from './index.js';
 import parser from '@typescript-eslint/parser';
 
 export default [
