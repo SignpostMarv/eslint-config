@@ -17,9 +17,12 @@ jobs:
                   node-version: 22.x
                   cache: 'npm'
             - run: npm ci
-            - run: ./node_modules/.bin/tsc --project ./tsconfig.app-check.json
-            - run: ./node_modules/.bin/prettier . --check
-            - run: ./node_modules/.bin/eslint ./index.ts
+            - name: Build
+              run: ./node_modules/.bin/tsc --project ./tsconfig.app.json
+            - name: Run Prettier
+              run: ./node_modules/.bin/prettier . --check
+            - name: Run ESLint
+              run: ./node_modules/.bin/eslint ./index.ts
     coverage:
         needs: basic-checks
         runs-on: ubuntu-latest
@@ -31,10 +34,10 @@ jobs:
                   node-version: 22.x
                   cache: 'npm'
             - run: npm ci
+            - name: Build
+              run: ./node_modules/.bin/tsc --project ./tsconfig.app.json
             - name: Generate coverage
               run: ./node_modules/.bin/c8 --config=./.c8rc.coveralls.json ./node_modules/.bin/eslint index.ts
-              env:
-                  NODE_OPTIONS: '--enable-source-maps --no-warnings=ExperimentalWarning --loader ts-node/esm'
             - name: Coveralls GitHub Action
               uses: coverallsapp/github-action@v2.2.3
               with:
