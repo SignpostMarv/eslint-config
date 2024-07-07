@@ -1,23 +1,28 @@
 {
   "type": "module",
-  "name": "@signpostmarv/nodejs-template",
+  "name": "@signpostmarv/eslint-config",
   "description": "nodejs template",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SignpostMarv/nodejs-template.git"
+    "url": "git+https://github.com/SignpostMarv/eslint-config.git"
   },
-  "funding": "https://github.com/SignpostMarv/nodejs-template?sponsor=1",
+  "funding": "https://github.com/SignpostMarv/eslint-config?sponsor=1",
   "exports": "./index.js",
   "types": "./index.d.ts",
   "devDependencies": {
+    "@eslint/js": "*",
     "@types/eslint": "^8.56.10",
+    "@types/eslint__js": "^8.42.3",
     "@types/node": "^20.14.9",
     "c8": "^10.1.2",
-    "eslint": "^8.57.0",
     "prettier": "^3.3.2",
     "ts-node": "^10.9.2",
     "typescript": "~5.5.2",
-    "typescript-eslint": "^7.14.1"
+    "typescript-eslint": "*"
+  },
+  "peerDependencies": {
+    "@eslint/js": "^9.6.0",
+    "typescript-eslint": "^7.15.0"
   }
 }

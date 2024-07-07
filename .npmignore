@@ -19,3 +19,4 @@
 /.prettierignore
 /.prettierrc
 /tsconfig*.json
+/eslnit.config.mjs

@@ -2,6 +2,5 @@
 	"reporter": ["text", "html"],
 	"report-dir": "./coverage",
 	"all": true,
-	"include": ["src"],
-	"exclude": ["./*.ts", "./**/*.d.ts"]
+	"exclude": ["./**/*.d.ts", "./**/*.js"]
 }

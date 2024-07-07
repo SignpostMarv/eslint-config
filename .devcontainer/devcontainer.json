@@ -1,5 +1,5 @@
 {
-	"name": "nodejs template",
+	"name": "@signpostmarv/eslint-config",
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
