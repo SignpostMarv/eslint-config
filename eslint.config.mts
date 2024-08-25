@@ -11,4 +11,13 @@ export default [
 		}
 	},
 	...config,
+	{
+		files: [
+			'./eslint.config.mts',
+			'./**/*.ts',
+		],
+		ignore: [
+			'./**/*.js',
+		],
+	},
 ];

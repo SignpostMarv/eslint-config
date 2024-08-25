@@ -1,4 +1,4 @@
 {
 	"extends": "./tsconfig.app",
-	"include": ["./index.ts", "./eslint.config.mjs"]
+	"include": ["./*.ts", "./**/*.mts"]
 }

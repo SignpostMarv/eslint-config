@@ -14,10 +14,10 @@ lint--prettier:
 	@NODE_OPTIONS='' ./node_modules/.bin/prettier . --check
 
 lint--eslint:
-	@echo 'checking eslint for fixable issues'
-	@./node_modules/.bin/eslint --cache --fix-dry-run
+	@echo 'build config'
+	@NODE_OPTIONS='' ./node_modules/.bin/tsc --project ./tsconfig.eslint.json
 	@echo 'checking eslint for all issues'
-	@./node_modules/.bin/eslint --cache
+	@./node_modules/.bin/eslint --cache './**/*.ts' './**/*.mts'
 
 lint: lint--prettier lint--tsc lint--eslint
 

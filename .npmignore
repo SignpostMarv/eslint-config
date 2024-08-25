@@ -1,8 +1,11 @@
 /**/*.ts
+/**/*.mts
 /**/*.js.map
+/**/*.mjs.map
 !/**/*.d.ts
 /tests/**/*.*
 /*.js
+/*.mjs
 /*.d.ts
 !index.js
 !index.d.ts
@@ -19,4 +22,3 @@
 /.prettierignore
 /.prettierrc
 /tsconfig*.json
-/eslnit.config.mjs
