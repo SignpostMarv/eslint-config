@@ -1,5 +1,5 @@
-import typescript from './typescript';
-import javascript from './javascript';
+import typescript from './typescript.js';
+import javascript from './javascript.js';
 
 export {
 	typescript,

@@ -16,7 +16,7 @@ export default [
 			'./**/*.ts',
 		],
 		ignore: [
-			'./**/*.js',
+			'./**/*.d.ts',
 		],
 	},
 ];
