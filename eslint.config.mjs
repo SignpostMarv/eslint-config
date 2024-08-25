@@ -6,14 +6,13 @@ export default [
 		languageOptions: {
 			parser,
 			parserOptions: {
-				project: ['./tsconfig.eslint.json']
-			}
-		}
+				project: ['./tsconfig.eslint.json'],
+			},
+		},
 	},
 	...config,
 	{
 		files: [
-			'./eslint.config.mts',
 			'./**/*.ts',
 		],
 		ignore: [

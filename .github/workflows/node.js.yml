@@ -22,7 +22,7 @@ jobs:
             - name: Run Prettier
               run: ./node_modules/.bin/prettier . --check
             - name: Run ESLint
-              run: ./node_modules/.bin/eslint ./index.ts
+              run: ./node_modules/.bin/eslint ./*.ts
     coverage:
         needs: basic-checks
         runs-on: ubuntu-latest

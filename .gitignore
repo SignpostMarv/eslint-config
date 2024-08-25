@@ -1,6 +1,5 @@
 /node_modules/
 /**/*.js
-/**/*.mjs
 /**/*.d.ts
 /**/*.map
 /.eslintcache

@@ -1,5 +1,5 @@
 /**/*.ts
-/**/*.mts
+/**/*.mjs
 /**/*.js.map
 /**/*.mjs.map
 !/**/*.d.ts
@@ -9,6 +9,10 @@
 /*.d.ts
 !index.js
 !index.d.ts
+!javascript.js
+!javascript.d.ts
+!typescript.js
+!typescript.d.ts
 /coverage/
 /.c8rc*.json
 /.devcontainer/
